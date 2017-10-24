@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="Author" content="泡泡冰麟" />
+    <meta name="Copyright" content="网站版权" />
+    <meta name="keywords" content="网站关键字" />
+    <meta name="description" content="网站描述" />
+    <title>Title</title>
+    <style>
+        #box{
+        position:absolute;
+        left: 50%;
+        top: 20%;
+        margin-left:-288px;
+        width: 576px;
+        height: 360px;
+        background: url("images/1.jpg") no-repeat center/cover;
+        user-select:none;
+        } 
+    </style>
+</head>
+<body>
+    <div id="box">  
+    </div>
+    <script>
+        var oBox = document.getElementById('box');
+        //鼠标滚轮事件
+        oBox.onmousewheel = function (e) {
+            e = e || window.event;
+            var x = e.wheelDelta/120*38;
+            var y = e.wheelDelta/120*24;
+            var w = this.offsetWidth; 
+            var h = this.offsetHeight; 
+            var wV = w + x;
+            var hV = h + y;
+            if(wV >= 1200 && x > 0) {
+                alert("害不害臊，还放大！ ！ ！");
+            }
+            roll(this,wV,hV);
+            e.preventDefault();
+        }
+        function roll (This,wV,hV) {//放大缩小以及修正位置
+            wV = Math.max(192,wV);
+            wV = Math.min(1920,wV);
+            hV = Math.max(120,hV);
+            hV = Math.min(1200,hV);
+            This.style.width =wV+"px";
+            This.style.height = hV+"px";
+            This.style.marginLeft = -wV/2+"px";
+            This.style.marginTop = 180-hV/2+"px";
+        }
+    </script>
+</body>
+</html>
