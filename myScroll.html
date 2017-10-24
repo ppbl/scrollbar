@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="Author" content="网页作者" />
+    <meta name="Copyright" content="网站版权" />
+    <meta name="keywords" content="网站关键字" />
+    <meta name="description" content="网站描述" />
+    <title>Title</title>
+    <style>
+        #box{
+        position: relative;
+        margin: 50px auto;
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+        overflow: hidden;
+        user-select:none;
+        }
+        .container{
+            right: 0;
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            background-image: linear-gradient(90deg,#f0b1bb, #ffc0cB);
+        }
+        .scroll{
+            position: absolute;
+            width: 18px;
+            border-radius: 9px;
+            left: 1px;
+            background-color: #ffe0eb;
+        }
+        .content{
+            /*position: absolute;*/
+            width: 480px;
+          /* word-wrap: break-word;*/
+        }
+        .content ul{ margin:0;
+            position: absolute;
+            width: 440px;
+            list-style: none;
+            padding:0 20px;}
+        li{border-bottom: 1px solid #ffe0eb;
+            padding-bottom: 10px;}
+    </style>
+   
+</head>
+<body>
+    <div id="box">
+        <div class="container">
+            <div class="scroll"></div>
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <p>1、Life was like a box of chocolates, you never know what you're going to get.</p>
+                    <span>生命就像一盒巧克力，结果往往出人意料。</span>
+                </li>
+                <li>
+                    <p>2、Stupid is as stupid does.</p>
+                    <span>蠢人做蠢事，也可理解为傻人有傻福。</span>
+                </li>
+                <li>
+                    <p>3、Miracles happen every day.</p>
+                    <span>奇迹每天都在发生。</span>
+                </li>
+                <li>
+                    <p>4、it made me look like a duck in water.</p>
+                    <span>它让我如鱼得水。</span>
+                </li>
+                <li>
+                    <p>5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+                    <span>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</span>
+                </li>
+                <li>
+                    <p>6、Death is just a part of life, something we're all destined to do.</p>
+                    <span>死亡是生命的一部分，是我们注定要做的一件事。</span>
+                </li>
+                <li>
+                    <p>7、You have got to put the past behind you before you can move on.</p>
+                    <span>放下包袱，继续前进。</span>
+                </li>
+                <li>
+                    <p>8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+                    <span>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</span>
+                </li>
+                <li>
+                    <p>9、If there is anything you need, I will not be far away.</p>
+                    <span>只要你需要，我就在这里。</span>
+                </li>
+                 <li>
+                    <p>1、Life was like a box of chocolates, you never know what you're going to get.</p>
+                    <span>生命就像一盒巧克力，结果往往出人意料。</span>
+                </li>
+                <li>
+                    <p>2、Stupid is as stupid does.</p>
+                    <span>蠢人做蠢事，也可理解为傻人有傻福。</span>
+                </li>
+                <li>
+                    <p>3、Miracles happen every day.</p>
+                    <span>奇迹每天都在发生。</span>
+                </li>
+                <li>
+                    <p>4、it made me look like a duck in water.</p>
+                    <span>它让我如鱼得水。</span>
+                </li>
+                <li>
+                    <p>5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+                    <span>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</span>
+                </li>
+                <li>
+                    <p>6、Death is just a part of life, something we're all destined to do.</p>
+                    <span>死亡是生命的一部分，是我们注定要做的一件事。</span>
+                </li>
+                <li>
+                    <p>7、You have got to put the past behind you before you can move on.</p>
+                    <span>放下包袱，继续前进。</span>
+                </li>
+                <li>
+                    <p>8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+                    <span>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</span>
+                </li>
+                <li>
+                    <p>9、If there is anything you need, I will not be far away.</p>
+                    <span>只要你需要，我就在这里。</span>
+                </li>
+                <li>
+                    <p>1、Life was like a box of chocolates, you never know what you're going to get.</p>
+                    <span>生命就像一盒巧克力，结果往往出人意料。</span>
+                </li>
+                <li>
+                    <p>2、Stupid is as stupid does.</p>
+                    <span>蠢人做蠢事，也可理解为傻人有傻福。</span>
+                </li>
+                <li>
+                    <p>3、Miracles happen every day.</p>
+                    <span>奇迹每天都在发生。</span>
+                </li>
+                <li>
+                    <p>4、it made me look like a duck in water.</p>
+                    <span>它让我如鱼得水。</span>
+                </li>
+                <li>
+                    <p>5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+                    <span>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</span>
+                </li>
+                <li>
+                    <p>6、Death is just a part of life, something we're all destined to do.</p>
+                    <span>死亡是生命的一部分，是我们注定要做的一件事。</span>
+                </li>
+                <li>
+                    <p>7、You have got to put the past behind you before you can move on.</p>
+                    <span>放下包袱，继续前进。</span>
+                </li>
+                <li>
+                    <p>8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+                    <span>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</span>
+                </li>
+                <li>
+                    <p>9、If there is anything you need, I will not be far away.</p>
+                    <span>只要你需要，我就在这里。</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var oBox = document.getElementById("box"),
+            scroll = document.getElementsByClassName('scroll')[0],
+            contentb = document.getElementsByClassName("content")[0],
+            content = contentb.getElementsByTagName('ul')[0],
+            container = document.getElementsByClassName("container")[0],
+            oH = oBox.offsetHeight,
+            cH = content.offsetHeight,
+            sH = container.offsetHeight,
+            prop = oH/cH;
+        scroll.style.height = sH*prop+"px";//动态设置滚动条长度
+
+        //滚动条事件
+        scroll.onmousedown = function (e) {
+            e = e || window.event;
+            var sY = this.offsetTop;
+            var cY = content.offsetTop; 
+            var mY = e.clientY;
+            document.onmousemove = function (e) {
+                e = e || window.event;
+                var nmY = e.clientY;
+                var nsY = scroll.offsetTop;
+                var ctopV = cY- (nmY - mY)/prop;
+                var stopV = sY+ nmY - mY;
+                roll( ctopV,stopV);
+            }
+        }
+        document.onmouseup = function () {
+            document.onmousemove = null;
+        }
+        //鼠标滚轮事件
+        oBox.onmousewheel = function (e) {
+            e = e || window.event;
+            var x = e.wheelDelta/120*80;
+            var cY = content.offsetTop; 
+            var sY = scroll.offsetTop; 
+            var ctopV = cY + x;
+            var stopV = sY- x*prop;
+            roll(ctopV,stopV);
+            e.preventDefault();
+        }
+        function roll (ctopV,stopV) {
+            ctopV = Math.min(0,ctopV);
+            ctopV = Math.max(oH -cH,ctopV);
+            stopV = Math.max(0,stopV);
+            stopV = Math.min(sH - sH*prop,stopV);
+            content.style.top =ctopV+"px";
+            scroll.style.top = stopV+"px";
+        }
+    </script>
+</body>
+</html>
